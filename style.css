@@ -1,10 +1,15 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body { 
 	font-family: 'roboto';
+	margin: 0;
  }
 
 /* MAIN */
 main {
-	margin-top: 75px;
+	margin-top: 70px;
 	font-family: 'roboto'
 }
 
@@ -63,7 +68,6 @@ li {
 	display: block;
 }
 
-
 /******************************* ANIMATION SLIDER ********************************/
 
 
@@ -83,6 +87,10 @@ li {
 
 .slides img {
 	display: inline-block;
+}
+
+.slides img:last-child {
+		margin-left: -4px;
 }
 
 .container img {
@@ -113,6 +121,7 @@ li {
 	font-family: 'roboto';
 	position: relative;
 	overflow-x: hidden;
+	margin-bottom: -81px;
 }
 
 .text-slider {
@@ -143,6 +152,9 @@ li {
 	background-color: #5CADD4;
 	border-radius: 2px;
 	cursor: pointer;
+	font-size: 10px;
+	width: 70px;
+	height: 20px;
 }
 
 .circle-left-new {
@@ -171,17 +183,18 @@ li {
 	width: 20%;
 	position: absolute;
 	border: 2px solid #5CADD3;
-	margin-top: -4px;
+	margin-top: 77px;
 	z-index: 1;
 }
 
 .opacity-bar {
 	border: 2px solid rgba(0,0,0,.3);
-	margin-top: -4px;
+	margin-top: 77px;
 	position: absolute;
 	width: 100%;
 }
 
+strong,
 span {
 	color: #5CADD3;
 }
@@ -205,6 +218,12 @@ hr {
 	width: 150px;
 	margin-bottom: -12px;
 	margin-top: -25px;
+}
+
+#service {
+	padding-top: 81px;
+	padding-bottom: 50px;
+	margin-bottom: -80px;
 }
 
 .top-service p {
@@ -303,6 +322,8 @@ hr {
 	background-color: #F5F5F5;
 	padding-top: 20px;
 	font-family: 'roboto';
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .p-center p {
@@ -357,7 +378,9 @@ hr {
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 50px;
-	margin-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 .portfolio img {
@@ -381,14 +404,14 @@ hr {
 .portfolio figure {
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 10px;
-	margin-right: 20px;
-	margin-left: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .projects img {
 	margin-bottom: -4px;
 }
+
 .projects {
 	margin-bottom: 0px;
 }
@@ -421,7 +444,7 @@ figcaption {
 	transition-duration: 0.5s;
 }
 
-.projects-pictures i {
+.fa-eye {
 	position: absolute;
 	margin-left: 219px;
 	margin-top: -26px;
@@ -439,6 +462,12 @@ figcaption {
 }
 
 /******************************* contacts **************************************/
+
+#contacts {
+	padding-top: 190px;
+	margin-top: -85px;
+}
+
 .bgc {
 	margin-bottom: 30px;
 }
@@ -451,8 +480,10 @@ input, textarea {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	margin-right: 30px;
+	border-radius: 5px;
+	border: 1px solid #d4d4d4;
 }
 
 .form {
@@ -464,18 +495,15 @@ input, textarea {
 	margin-right: 1px;
 }
 
-.form button {
+.form input:last-child {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 90%;
-	height: 50px;
+	width: 50%;
+	height: 40px;
 	color: white;
 	background-color: #5CADD3;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	border-bottom-color: #5CADD4;
+	border-bottom: 3px solid #3D7793;
 	cursor: pointer;
 }
 
@@ -486,11 +514,18 @@ address {
 	position: relative;
 	top: -110px;
 	font-style: normal;
+	color: #505050;
 }
 
 address p:first-child {
 	font-size: 25px;
 	font-weight: bold;
+	color: black;
+}
+
+ address span {
+	text-decoration: underline dotted;
+	color: #505050;
 }
 
 .contact-bold {
@@ -523,6 +558,7 @@ address p:first-child {
 	opacity: 0.7;
 }
 
+/****************************************MEDIA QUERIES*******************************************/
 
 @media screen and (min-width: 768px) {
 	.menu button {
@@ -564,7 +600,7 @@ address p:first-child {
 	.text-slider button {
 		width: 110px;
 		height: 35px;
-	}
+		font-size: 15px;	}
 
 	.container_service img {
 		width: 100%;
@@ -579,6 +615,14 @@ address p:first-child {
 		width: 920px;
 	}
 
+	section h1 {
+		font-size: 3em;
+	}
+
+	#project h1 {
+		font-size: 3em;
+	}
+
 	.circle-right-new {
 		padding: 18px 33px 18px 10px;
 	}
@@ -591,7 +635,7 @@ address p:first-child {
 		width: 100%;
 		flex-flow: wrap;
 		justify-content: center;
-		margin: auto;
+
 	}
 
 	.bgc {
@@ -638,5 +682,3 @@ address p:first-child {
 		max-height: 100px;
 	}
 }
-
-
